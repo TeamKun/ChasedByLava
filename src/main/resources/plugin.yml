@@ -1,0 +1,12 @@
+name: ChasedByLava
+version: ${project.version}
+main: net.kunmc.lab.chasedbylava.ChasedByLava
+api-version: 1.16
+commands:
+  chasedbylava:
+    usage: |-
+      /chasedbylava start normal <lava|water>
+      /chasedbylava start shuffle
+      /chasedbylava stop
+      /chasedbylava change <player> <lava|water>
+    permission: op
