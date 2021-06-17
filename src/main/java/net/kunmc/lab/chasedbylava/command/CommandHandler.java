@@ -92,7 +92,6 @@ public class CommandHandler implements TabExecutor {
                     }
                     default:
                         sender.sendMessage(ChatColor.RED + "不明なコマンドです.");
-
                 }
                 break;
             case "stop":
@@ -139,6 +138,8 @@ public class CommandHandler implements TabExecutor {
 
                     task.changeMaterial(material);
                 });
+
+                sender.sendMessage(ChatColor.GREEN + (playerList.size() + "人のプレイヤーの追ってくる流体を" + material + "に変更しました."));
                 break;
             default:
                 sender.sendMessage(ChatColor.RED + "不明なコマンドです.");
